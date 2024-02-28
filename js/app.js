@@ -1,4 +1,4 @@
-/*document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('heart-container');
     const numberOfHearts = 200; // Adjust based on how dense you want the animation
     const initPositions = [];
@@ -30,4 +30,4 @@
             });
         }, index * 50); // Adjust timing for effect
     });
-});*/
+});
