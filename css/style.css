@@ -79,7 +79,6 @@ hr {
     max-width: 600px; /* Adjust based on your needs */
     height: auto;
     margin: auto auto 30px;
-    z-index: 10;
 }
 
 .slide {
