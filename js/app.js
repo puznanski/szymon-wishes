@@ -1,17 +1,3 @@
-let slideIndex = 0;
-
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("slide");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 5000); // Change image every 5 seconds
-}
-
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('heart-container');
     const numberOfHearts = 200;
@@ -37,9 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             heart.addEventListener('animationend', () => {
                 heart.remove();
-                if (index === numberOfHearts - 1) {
-                    //showSlides();
-                }
             });
         }, index * 50);
     });
@@ -56,4 +39,17 @@ document.addEventListener('DOMContentLoaded', () => {
     container2.style.height = `${maxHeight}px`;
 });
 
+let slideIndex = 0;
 showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
