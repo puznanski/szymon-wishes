@@ -79,7 +79,7 @@ hr {
     position: relative;
     max-width: 600px; /* Adjust based on your needs */
     height: auto;
-    margin: auto auto 30px;
+    margin: 20px auto 30px;
 }
 
 .slide {
@@ -111,5 +111,4 @@ p {
 .plane {
     max-width: 2rem;
     height: auto;
-    margin-bottom: 20px;
 }

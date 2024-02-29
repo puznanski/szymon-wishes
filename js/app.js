@@ -27,6 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             heart.addEventListener('animationend', () => {
                 heart.remove();
+                if (index === numberOfHearts - 1) {
+                    container.remove();
+                }
             });
         }, index * 40);
     });
