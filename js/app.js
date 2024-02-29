@@ -26,17 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }, index * 50);
     });
-
-    const container2 = document.querySelector('.slideshow-container');
-    let maxHeight = 0;
-
-    document.querySelectorAll('.slide').forEach(slide => {
-        if (slide.offsetHeight > maxHeight) {
-            maxHeight = slide.offsetHeight;
-        }
-    });
-
-    container2.style.height = `${maxHeight}px`;
 });
 
 let slideIndex = 0;
