@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('heart-container');
-    const numberOfHearts = 200;
+    const numberOfHearts = 100;
     const initPositions = [];
 
     for (let i = 0; i < numberOfHearts; i++) {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 let slideIndex = 0;
-//showSlides();
+showSlides();
 
 function showSlides() {
     let i;
