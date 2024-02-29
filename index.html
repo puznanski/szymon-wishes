@@ -9,7 +9,7 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const path = window.location.pathname;
-        if (path === "/wishes" || path === "/wishes/") {
+        if (path === "" || path === "/" || path === "/wishes" || path === "/wishes/") {
             window.location.href = "/wishes.html";
         } else {
             window.location.href = "/404.html";
