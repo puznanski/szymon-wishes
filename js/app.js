@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 let slideIndex = 0;
-showSlides();
+//showSlides();
 
 function showSlides() {
     let i;
