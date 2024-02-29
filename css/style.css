@@ -57,7 +57,7 @@ hr {
     position: absolute;
     opacity: 1;
     transform: translate(-50%, -50%);
-    animation: growAndFade 7s forwards;
+    animation: growAndFade 5s forwards;
 }
 
 @keyframes growAndFade {
