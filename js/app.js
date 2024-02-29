@@ -1,6 +1,10 @@
+function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('heart-container');
-    const numberOfHearts = 100;
+    const numberOfHearts = isMobileDevice() ? 50 : 100;
     const initPositions = [];
 
     for (let i = 0; i < numberOfHearts; i++) {
