@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             heart.addEventListener('animationend', () => {
                 heart.remove();
             });
-        }, index * 50);
+        }, index * 40);
     });
 });
 
