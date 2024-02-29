@@ -108,7 +108,19 @@ p {
     font-size: 50%;
 }
 
-.plane {
-    max-width: 2rem;
+.clickable-div {
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.clickable-div img {
+    width: 2rem;
     height: auto;
+    margin-bottom: 0;
+}
+
+.text {
+    margin-top: 0;
+    font-size: 25%;
 }

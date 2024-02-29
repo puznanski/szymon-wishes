@@ -27,23 +27,24 @@
 
 <body>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    /*document.addEventListener('DOMContentLoaded', function() {
         const path = window.location.pathname;
         if (path === "/wishes" || path === "/wishes/") {
             window.location.href = "/404.html";
         } else {
             window.location.href = "/404.html";
         }
-    });
+    });*/
 </script>
 <div id="heart-container">
 </div>
 <div class="container">
     <h1>Wszystkiego najlepszego!!</h1>
     <p>Zdrówka, szczęścia, radości z życia, spełnienia marzeń i super tripów, sto lat!! 🥳🥳</p>
-    <a href="https://www.google.com/travel/flights">
-        <img src="img/Airplane_silhouette_white.svg" class="plane">
-    </a>
+    <div class="clickable-div" onclick="window.location.href='https://www.google.com/travel/flights'">
+        <img src="img/Airplane_silhouette_white.svg">
+        <div class="text">Kliknij mnie</div>
+    </div>
     <div class="slideshow-container">
         <div class="slide fade">
             <img src="img/1.jpeg" style="width:100%">
