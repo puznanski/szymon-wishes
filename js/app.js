@@ -4,7 +4,7 @@ function isMobileDevice() {
 
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('heart-container');
-    const numberOfHearts = isMobileDevice() ? 50 : 100;
+    const numberOfHearts = isMobileDevice() ? 40 : 100;
     const initPositions = [];
 
     for (let i = 0; i < numberOfHearts; i++) {
