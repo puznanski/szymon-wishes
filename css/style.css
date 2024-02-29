@@ -115,7 +115,7 @@ p {
 }
 
 .clickable-div img {
-    width: 2rem;
+    max-width: 2rem;
     height: auto;
     margin-bottom: 0;
 }
