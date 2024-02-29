@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             heart.addEventListener('animationend', () => {
                 heart.remove();
                 if (index === numberOfHearts - 1) {
-                    showSlides();
+                    //showSlides();
                 }
             });
         }, index * 50);
@@ -55,3 +55,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     container2.style.height = `${maxHeight}px`;
 });
+
+showSlides();
